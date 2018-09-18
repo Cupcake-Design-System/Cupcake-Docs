@@ -22,5 +22,5 @@ Tested with : node 5.12.0, jekyll 3.1.6, ruby 2.3.0
 ### Deploy
 
 
-Running ```npm run deploy``` will compile and push to https://pages.code.ipreo.com/Ipreo/cupcake-docs/
+Running ```npm run deploy``` will compile and push to https://cupcake-design-system.github.io/Cupcake-Docs
 

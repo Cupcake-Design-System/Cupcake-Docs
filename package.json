@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "browser-sync": "2.24.7",
-    "@ipreo/cupcake": "^1.4.8",
     "git-directory-deploy": "1.5.1",
     "git-scripts": "0.2.1",
     "gulp": "3.9.1",
