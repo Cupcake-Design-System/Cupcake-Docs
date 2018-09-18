@@ -4,7 +4,7 @@
 
  - [View The Docs](https://cupcake-design-system.github.io/docs)
 
-### Prerequisite
+### Prerequisites
 
  - [Ruby](https://www.ruby-lang.org/en/downloads/) - use the installer
  - [Jekyll](https://jekyllrb.com/) - ```$ gem install jekyll```
