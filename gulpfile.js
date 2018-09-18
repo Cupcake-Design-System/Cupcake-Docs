@@ -39,7 +39,7 @@ gulp.task("jekyll-rebuild", ["build-html"], function() {
 gulp.task("browser-sync", ["build-html"], function() {
   browserSync({
     server: {
-      baseDir: "dist"
+      baseDir: "docs"
     }
   });
 });
@@ -55,7 +55,7 @@ gulp.task("compile-css", ["jekyll-build"], function() {
         cascade: true
       })
     )
-    .pipe(gulp.dest("dist/assets/scss/"))
+    .pipe(gulp.dest("docs/assets/scss/"))
     .pipe(
       browserSync.reload({
         stream: true
