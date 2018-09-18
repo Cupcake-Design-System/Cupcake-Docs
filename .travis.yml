@@ -15,7 +15,7 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-url: https://cupcake-design-system.github.io/Cupcake-Docs
+  github-url: https://cupcake-design-system.github.io
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
