@@ -8,7 +8,6 @@ var notify = require("gulp-notify");
 var prefix = require("gulp-autoprefixer");
 var cp = require("child_process");
 var fs = require("fs");
-var ghPages = require("gulp-gh-pages");
 var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 var messages = {
   jekyllBuild: '<span style="color: gray">Running:</span> $ jekyll build'
@@ -145,11 +144,4 @@ gulp.task("jekyll-build-prod", function(done) {
     })
     .on("close", done);
 });
-
-gulp.task("push-to-gh-pages", function() {
-  return gulp.src("./dist/**/*").pipe(ghPages());
-});
-
-gulp.task("deploy", ["jekyll-build-prod", "push-to-gh-pages"]);
-
 

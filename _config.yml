@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically.
 
 # Site settings
-destination:    ./dist
+destination:    ./docs
 port:           5000
 baseurl:        ""
 # url:            "https://pages.code.ipreo.com/Ipreo/cupcake-docs"
