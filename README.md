@@ -2,7 +2,7 @@
 
 ## Cupcake Docs
 
- - [View The Docs](https://pages.code.ipreo.com/Ipreo/cupcake-docs/)
+ - [View The Docs](https://cupcake-design-system.github.io/docs)
 
 ### Prerequisite
 
