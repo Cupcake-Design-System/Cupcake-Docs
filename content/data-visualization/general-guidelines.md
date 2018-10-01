@@ -11,7 +11,7 @@ colors:
 - danger
 ---
 
-### Knowing your audience
+### different
 Knowing your audience or in most cases the persona drives data visualization forward. Explore what they already know, questions
 that will arise and what new information they intend on gaining. 
 
