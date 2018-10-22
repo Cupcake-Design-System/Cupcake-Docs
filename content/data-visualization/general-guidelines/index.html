@@ -3,21 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="The Ipreo Design System Responsive, flex-enabled, and fully modular.">
-  
-  <title>Cupcake · 1.4.x Release</title>
-  
-  
-<link rel="stylesheet" href="https://cupcake-design-system.github.io/docs/assets/cupcake/default.css">
-  
-  <!-- Documentation extras -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
-  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
-  <script defer src="https://cupcake-design-system.github.io/docs/assets/js/fontawesome-all.min.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" rel="stylesheet">
-  <link href="https://cupcake-design-system.github.io/docs/assets/scss/documentation.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Recommendations to create effective visualizations within Ipreo products">
+
+<title>Cupcake · General Guidelines</title><!-- Theme Switch -->
+<script>
+  var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
+    {};
+  var themeName = themeSettings.themeName || '';
+  if (themeName) {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/docs/assets/cupcake' + themeName + '.css">');
+  } else {
+    document.write('<link rel="stylesheet" id="theme-style" href="https://cupcake-design-system.github.io/docs/assets/cupcake/default.css">');
+  }
+</script><!-- Documentation extras -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@3.1.0-beta.2/dist/simplebar.css">
+<script src="https://cdn.jsdelivr.net/npm/simplebar@3.1.0-beta.2/dist/simplebar.js"></script>
+<script defer src="https://cupcake-design-system.github.io/docs/assets/js/fontawesome-all.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+<link href="https://cupcake-design-system.github.io/docs/assets/scss/documentation.css" rel="stylesheet">
 </head>
 
 <body>
@@ -227,7 +231,7 @@
     
     
 
-      <li class="c-sidenav-menu-item ">
+      <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
           <a class="c-sidenav-menu-link">
 
             <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
@@ -241,7 +245,7 @@
               </span>
           </a>
     
-          <ul class="c-sidenav-menu-submenu"><li>
+          <ul class="c-sidenav-menu-submenu"><li class="c-sidenav-menu-item c-sidenav-menu-item-active">
                 <a class="c-sidenav-menu-link" href="https://cupcake-design-system.github.io/docs/content/data-visualization/general-guidelines/">
                   General Guidelines 
                 </a></li><li>
@@ -321,108 +325,41 @@
 
 
   <main class="main-container" role="main">
+
+        
+
+        
+        <div class="c-bg-primary c-text-white c-m-top-0 c-p-lg docs-bg-img">
+          <h1 class="docs-title" id="content">General Guidelines</h1>
+          <p class="docs-lead">Recommendations to create effective visualizations within Ipreo products</p>
+        </div>
+        
+
+        
+
+        
         <div class="main-content">            
-            <div class="docs-article-image is-single" style="background-color:#7950f2">
-              <span class="docs-article-overlay"></span>
-              
-              <span class="docs-article-icon">
-                <span class="icon">
-                  <i class="fa fa-shipping-fast"></i>
-                </span>
-              </span>
-
-              <strong class="docs-article-title">
-                  1.4.x Release
-                </strong>
-            </div>
             
-            
-              <h2 id="release-146">Release <a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.4.5...HEAD">1.4.6</a></h2>
-<p><strong>27 June 2018</strong></p>
 
-<h3 id="merged">Merged</h3>
+          <h3 id="before-you-start">Before you start</h3>
+<p>A complete understanding of the data you have is crucial before building visualizations. Referring to this guide will help you transform your data and apply appropriate branding properties according to Ipreo Brand Guidelines.
+Knowing your Audience
+Lean in to the perspective of your audience or more specifically: their persona. What do they already know and what new information do you want them to learn from your visualizations? The foundation of a good visualization are clear objectives!</p>
+<h3 id="story-telling">Story Telling</h3>
+<p>The purpose of visualizations are to tell a story with data so think of the critical points you are trying to emphasize. What supporting information does it require? Do you want to compare information or show trend over time? Note the assumptions you’re making on the user’s part and define the purpose of your story.</p>
+<h3 id="context-at-first-glance">Context at first glance</h3>
+<p>A common misconception with data visualization is the assumption the audience knows too much. If you adhere to the following guidelines you can ensure your visualization can be understood at least at a high level:</p>
 <ul>
-  <li>Button tweaks <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/232">View Merge</a></strong></li>
-  <li>Feature: Form styling updates <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/230">View Merge</a></strong></li>
-  <li>Feature: Buttons update <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/229">View Merge</a></strong></li>
-  <li>integrated new package cupcake-stylelint-config <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/228">View Merge</a></strong></li>
+  <li>Title all vsiualizations</li>
+  <li>Properly label all axes</li>
+  <li>Use the same units throughout</li>
+  <li>Do NOT overload data- use whitespace!</li>
 </ul>
 
-<h3 id="commits">Commits</h3>
-<ul>
-  <li>testing: selectors <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/f28499e90b76fc09b85610bac32b0a47d56bef15">View Commit</a></strong></li>
-  <li>Revert "button-tweaks" <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/31cdbb3db1ef64837737bac8f3a82f3c778b9de5">View Commit</a></strong></li>
-  <li>button-tweaks <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/3797b7a636be5fca80119271d6875ba87a797b6b">View Commit</a></strong></li>
-  <li>Stylelint update broke one of their rules <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/1bf8b9d0fe8b35036ea45192c860d8b18c47037e">View Commit</a></strong></li>
-</ul>
+<h3 id="sketches-and-prototyping">Sketches and Prototyping</h3>
+<p>Before going through the examples, it may be beneficial to sketch out ideas with pen and paper. Defining different ways to tell your story will help land on the best visualization. From there, simple prototyping with software</p>
 
-<h2 id="release-145">Release <a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.4.3...1.4.5">1.4.5</a></h2>
-<p><strong>19 April 2018</strong></p>
 
-<h3 id="merged-1">Merged</h3>
-<ul>
-  <li>fix - select error was not working with xs,sm,lg.. etc. <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/226">View Merge</a></strong></li>
-  <li>adjust select element according to invision <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/224">View Merge</a></strong></li>
-  <li>remove card body and subtitle color definition <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/223">View Merge</a></strong></li>
-  <li>new styles for suggester, bd flavor <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/225">View Merge</a></strong></li>
-</ul>
-
-<h3 id="commits-1">Commits</h3>
-<ul>
-  <li>Release 1.4.5 <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/67bdc4c2c8c2392592327d34d125271b2cc194f2">View Commit</a></strong></li>
-  <li>add an icon to select element <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/8383e6eb0e7992f4799633fb459078ca7e44a62b">View Commit</a></strong></li>
-  <li>return stylings for clear-icon <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/f5073f815d633588575cb3a2226f54c5e60e7cce">View Commit</a></strong></li>
-  <li>fixed issues <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/ff5c7a07b0e7603b4d93b219abf186e676324711">View Commit</a></strong></li>
-  <li>remove card body and subtitle color defenition <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/bfbe15b6e36f6edcbe8f955b7c0148550eb26076">View Commit</a></strong></li>
-</ul>
-
-<h2 id="release-143">Release <a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.4.2...1.4.3">1.4.3</a></h2>
-<p><strong>6 April 2018</strong></p>
-
-<h3 id="merged-2">Merged</h3>
-<ul>
-  <li>Improvements of border-radius for button and input groups (to prevent extra overrides in branding package) <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/221">View Merge</a></strong></li>
-</ul>
-
-<h3 id="commits-2">Commits</h3>
-<ul>
-  <li>adding quick disabled state <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/2276aae0ebaf506420817c53c80cbfbed187f647">View Commit</a></strong></li>
-  <li>fixed border-radius for input groups <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/329935a18e74c8e88d3a42af58279ce02aba3e2f">View Commit</a></strong></li>
-  <li>fixed border-radius for button groups <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/c32cb98098bfd155ee2c76df251ef80559e5a4c6">View Commit</a></strong></li>
-  <li>Release 1.4.3 <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/9f51868b2aa8f7ff93077c3d15b74c06216c8386">View Commit</a></strong></li>
-</ul>
-
-<h2 id="release-142">Release <a href="https://code.ipreo.com/Ipreo/cupcake/compare/1.4.0...1.4.2">1.4.2</a></h2>
-<p><strong>3 April 2018</strong></p>
-
-<h3 id="merged-3">Merged</h3>
-<ul>
-  <li>error state for select <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/220">View Merge</a></strong></li>
-  <li>make c-btn-disabled class to work with main buttons <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/219">View Merge</a></strong></li>
-  <li>add c-select-xs <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/218">View Merge</a></strong></li>
-  <li>add x-placement to popover color mixin <strong><a href="https://code.ipreo.com/Ipreo/cupcake/pull/215">View Merge</a></strong></li>
-</ul>
-
-<h3 id="commits-3">Commits</h3>
-<ul>
-  <li>Release 1.4.1 <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/4beef7377c1f58bf332c58e8ac7d2e7501013660">View Commit</a></strong></li>
-  <li>remove arial from BD-flavor <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/082d236fd30be87987d3d54d1b5d73f1f83d8855">View Commit</a></strong></li>
-  <li>removed all color variables from condensed flavor <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/2977558d3ad5c09e9ea963731392d2101a0ae61f">View Commit</a></strong></li>
-  <li>flavor specific strong text in reset.css <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/155038548a15c73c598b8cd3d9aedb0f8b3f8d99">View Commit</a></strong></li>
-  <li>allow white-label for file upload <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/6be9d48132b22193ef3bf79eb36428b282879232">View Commit</a></strong></li>
-  <li>BD, do not set color in text sizes and headers. <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/c99780f716eaf5bf57d71a7204e156602c127bf0">View Commit</a></strong></li>
-  <li>Update CHANGELOG.md <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/804c93492d37e133f32bb514efb02f2d26757e19">View Commit</a></strong></li>
-  <li>condensed modal padding fix <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/4d005230ee475ba48b4c96a65b427d71d65f13d3">View Commit</a></strong></li>
-  <li>focus within functionality for c-input <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/b7910320b678a79cb64f35c88b59f85968649ac9">View Commit</a></strong></li>
-  <li>add packages to gitignore <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/4920c1432f2ff90d6e8c82cbc512aadc6ddc561a">View Commit</a></strong></li>
-  <li>Release 1.4.2 <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/893245bd4de3079038e799bf8a2dfc7678324089">View Commit</a></strong></li>
-  <li>fix modal jumping in IE11 <strong><a href="https://code.ipreo.com/Ipreo/cupcake/commit/2036908cf5798d00b1cbc60812ab58f188e059f3">View Commit</a></strong></li>
-</ul>
-
-            
-              <a class="c-btn c-btn-primary" href="https://cupcake-design-system.github.io/docs/release-notes/">
-                <i class="fa fa-arrow-left"></i> Back to all release notes
-              </a>
 
         </div>
 
@@ -462,13 +399,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
