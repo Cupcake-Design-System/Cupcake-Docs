@@ -5,19 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="General guidelines for data visualization">
 
-<title>Cupcake · Examples</title><!-- Theme Switch -->
-<script>
-  var themeSettings = (localStorage.getItem('themeSettings')) ? JSON.parse(localStorage.getItem('themeSettings')) :
-    {};
-  var themeName = themeSettings.themeName || '';
-  if (themeName) {
-    document.write('<link rel="stylesheet" id="theme-style" href="/assets/cupcake' + themeName + '.css">');
-  } else {
-    document.write('<link rel="stylesheet" id="theme-style" href="/assets/cupcake/default.css">');
-  }
-</script><!-- Documentation extras -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
-<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+<title>Cupcake · Examples</title><link rel="stylesheet" href="/assets/cupcake/default.css"><!-- Documentation extras -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@3.1.0-beta.2/dist/simplebar.css">
+<script src="https://cdn.jsdelivr.net/npm/simplebar@3.1.0-beta.2/dist/simplebar.js"></script>
 <script defer src="/assets/js/fontawesome-all.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 <link href="/assets/scss/documentation.css" rel="stylesheet">
@@ -231,7 +221,7 @@
       <li class="c-sidenav-menu-item  c-sidenav-menu-item-active">
           <a class="c-sidenav-menu-link">
 
-            <span class="c-sidenav-menu-icon " aria-hidden="true"></span>
+            <span class="c-sidenav-menu-icon fal fa-object-ungroup" aria-hidden="true"></span>
 
             <span class="c-sidenav-menu-title">
               Data Visualization
@@ -340,22 +330,6 @@
           <div class="c-d-none c-xl-d-block c-col-xl-2 docs-toc">
 
               
-              <div id="customize-menu" class="docs-flavor-switch c-d-none c-sm-d-block">
-                  <input type="hidden" name="Framework" id="Framework" class="docs-flavor-switch-input">
-                  <span class="docs-flavor-button docs-flavor-switch-current">Select A Flavor</span>
-                  <ul id="styleOptions" title="switch styling" class="docs-flavor-list">
-                    <li class="docs-flavor-list-item" data-dropdown-value="default">
-                      <a href="#" class="flavor" data-theme="default">Default</a>
-                    </li>
-                    <li class="docs-flavor-list-item" data-dropdown-value="bd">
-                      <a href="#" class="flavor" data-theme="bd">BD</a>
-                    </li>
-                    <li class="docs-flavor-list-item" data-dropdown-value="condensed">
-                      <a href="#" class="flavor" data-theme="condensed">Condensed</a>
-                    </li>
-                  </ul>
-                </div>
-                
 
 
             <ul class="section-nav">

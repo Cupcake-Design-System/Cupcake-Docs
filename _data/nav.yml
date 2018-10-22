@@ -53,7 +53,7 @@
     - title: Tooltips & Popovers                      
 
 - title: Data Visualization
-  icon: 
+  icon: fal fa-object-ungroup
   pages:
     - title: General Guidelines
     - title: Examples

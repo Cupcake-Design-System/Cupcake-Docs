@@ -11,13 +11,13 @@
     "dev": "gulp"
   },
   "devDependencies": {
-    "browser-sync": "2.24.7",
+    "browser-sync": "2.26.3",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-clean-css": "3.10.0",
     "gulp-concat": "2.6.1",
     "gulp-notify": "3.2.0",
-    "gulp-sass": "4.0.1",
+    "gulp-sass": "4.0.2",
     "gulp-uglify": "3.0.1",
     "source-sans-pro": "^2.20.2",
     "surge": "0.20.1"
