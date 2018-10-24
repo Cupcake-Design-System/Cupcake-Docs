@@ -119,3 +119,8 @@ figure.highlight {
   box-shadow: none;
   border-radius: 0;
 }
+
+
+
+.full-example .highlight { display: none !important;}
+.full-example .highlight.show-me { display: block !important;}

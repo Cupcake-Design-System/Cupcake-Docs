@@ -1,0 +1,20 @@
+{%- comment -%}
+Usage: {% include example.html content=markup %},
+where content is a capture with the HTML content
+id - null (default)
+class - "docs-example" (default)
+{%- endcomment -%}
+
+{%- assign preview_id = include.id -%}
+{%- assign preview_class = include.class -%}
+
+<div class="full-example">
+  <div{% if preview_id %} id="{{ preview_id }}"{% endif %} class="docs-example{% if preview_class %} {{ preview_class }}{% endif %}">
+    {{- include.content -}}
+  </div>
+
+  {%- highlight html -%}
+    {{- include.content -}}
+  {%- endhighlight -%}
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+</div>

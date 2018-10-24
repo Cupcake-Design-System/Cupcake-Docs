@@ -15,28 +15,34 @@ sizes:
 
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
 
-{% example html %}
+{% capture btn %}
 <button type="button" class="c-btn c-btn-primary">Button</button>
-{% endexample %}
+{% endcapture %}
+
+{% include example.html content=btn %}
 
 ## Color Examples
 
 This is an example of available colors for the **{{ page.title }}** element. 
 
-{% example html %}
+{% capture btnColors %}
 {% for color in site.data.theme-colors %}
 <button type="button" class="c-btn c-btn-{{ color }}">{{ color | capitalize }}</button>{% endfor %}
-{% endexample %}
+{% endcapture %}
+
+{% include example.html content=btnColors %}
 
 
 ## Size Examples
 
 This is an example of available sizes for the **{{ page.title }}** element. 
 
-{% example html %}
+{% capture btnSizes %}
 {% for size in site.data.theme-sizes %}
 <button type="button" class="c-btn c-btn-primary c-btn-{{ size.value }}">{{ size.name }}</button>{% endfor %}
-{% endexample %}
+{% endcapture %}
+
+{% include example.html content=btnSizes %}
 
 
 ## Disabled state

@@ -1,0 +1,24 @@
+{%- comment -%}
+Usage: {% include example.html content=markup %},
+where content is a capture with the HTML content
+id - null (default)
+class - "docs-example" (default)
+optional: hide_preview - disabled (default)
+optional: hide_markup - disabled (default)
+{%- endcomment -%}
+
+{%- assign preview_id = include.id -%}
+{%- assign preview_class = include.class -%}
+
+{%- if include.hide_preview == null -%}
+<div{% if preview_id %} id="{{ preview_id }}"{% endif %} class="docs-example{% if preview_class %} {{ preview_class }}{% endif %}">
+  {{- include.content -}}
+</div>
+{%- endif -%}
+
+{%- if include.hide_markup == null -%}
+  {%- highlight html -%}
+    {{- include.content -}}
+  {%- endhighlight -%}
+  <div class="c-a c-p-sm c-text-xs c-m-bottom-xl c-bg-gray-2" id="highlight-toggle">HTML <i class="fas fa-caret-down"></i></div>
+{%- endif -%}

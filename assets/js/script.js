@@ -93,12 +93,16 @@ $html.on('click.ui.btn', '#highlight-toggle', function(e) {
 /************************************************
 * Clipboard
 *************************************************/  
+$('.full-example .highlight pre').each(function () {
+  var btnHtml = '<div class="docs-clipboard"><button class="docs-btn c-btn c-btn-xs c-btn-primary" data-tooltip="Copy To Clipboard" data-tooltip-conf="right square">Copy</button></div>'
+  $(this).after(btnHtml)
+})
+
 
 $('div.highlight pre').each(function () {
   var btnHtml = '<div class="docs-clipboard"><button class="docs-btn c-btn c-btn-xs c-btn-primary" data-tooltip="Copy To Clipboard" data-tooltip-conf="right square">Copy</button></div>'
   $(this).after(btnHtml)
 })
-
 
 
 var clipboard = new Clipboard('.docs-btn', {
